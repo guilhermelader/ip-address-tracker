@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <title>Front end ip address</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>IP Address Tracker</header>
+      <form>
+        <input type="text" placeholder="Search for any IP address or domain" id="inputText"/>
+        <button type="submit">
+          <img src="./images/icon-arrow.svg" />
+        </button>
+        <div id="error"></div>
+      </form>
+      <div class="response-container">
+        <div class="response-item">
+          <div class="title">ip address</div>
+          <div id="ip" class="data"></div>
+        </div>
+        <div class="response-item">
+          <div class="title">location</div>
+          <div id="location" class="data"></div>
+        </div>
+        <div class="response-item">
+          <div class="title">timezone</div>
+          <div id="timezone" class="data"></div>
+        </div>
+        <div class="response-item">
+          <div class="title">isp</div>
+          <div id="isp" class="data"></div>
+        </div>
+      </div>
+    </div>
+    <div class="map-container">
+      <div id="mapid"></div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
