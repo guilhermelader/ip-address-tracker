@@ -1,5 +1,7 @@
 # Frontend Mentor - IP Address Tracker
 
+# [Live view](https://ip-address-tracker-woad-two.vercel.app/)
+
 ![Design preview for the IP Address Tracker coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
